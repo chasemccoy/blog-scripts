@@ -2,5 +2,8 @@
   "version": 2,
   "alias": "chs-blog",
   "builds": [{"src": "index.js", "use": "now-micro"}],
-  "routes": [{"src": ".*", "dest": "/"}]
+  "routes": [{"src": ".*", "dest": "/"}],
+  "env": {
+    "AIRTABLE_API_KEY": "@airtable-api-key"
+  }
 }

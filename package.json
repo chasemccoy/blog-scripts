@@ -11,6 +11,7 @@
     "dev": "micro-dev"
   },
   "dependencies": {
+    "airtable": "^0.5.9",
     "micro": "^9.3.3"
   },
   "devDependencies": {
