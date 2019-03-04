@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "alias": "chs-blog",
+  "builds": [{"src": "index.js", "use": "now-micro"}],
+  "routes": [{"src": ".*", "dest": "/"}]
+}
