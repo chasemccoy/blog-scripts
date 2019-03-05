@@ -15,7 +15,7 @@ module.exports = async (req, res) => {
   let currentDate = null;
 
   table.forEach(record => {
-    const date = new Date(record.get('Date Added'));
+    const date = new Date(record.get('Date Added')).toLocaleString('en-US', { timeZone: 'America/Chicago' });
 
     if (currentDate === null) {
       response += `# ${format(date, DATE_FORMAT)} \n\n`
