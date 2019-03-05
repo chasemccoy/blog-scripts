@@ -30,7 +30,7 @@ module.exports = async (req, res) => {
 
     currentDate = date;
 
-    response += `**${record.get('Title')}**\n`
+    response += `**[${record.get('Title')}]()**  \n`
     response += record.get('URL')
     response += '\n\n'
   })
